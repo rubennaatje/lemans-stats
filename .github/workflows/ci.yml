@@ -46,4 +46,12 @@ jobs:
 
       - name: Run linter 👀
         run: yarn lint
-
+      - name: build
+        run: yarn run docs:build
+      - name: deploy
+        if: success()
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
