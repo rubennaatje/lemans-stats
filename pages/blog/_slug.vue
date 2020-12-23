@@ -1,0 +1,41 @@
+<template>
+  <article class="pa3 pa5-ns">
+    <TableOfContent :toc="article.toc" />
+    <pre> {{ article.author }}</pre>
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.description }}</p>
+    <img :src="article.img" :alt="article.alt" />
+    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+    <nuxt-content :document="article" />
+    <!-- <author :author="article.author" /> -->
+  </article>
+</template>
+<script>
+export default {
+  async asyncData({ $content, params }) {
+    const article = await $content('articles', params.slug).fetch()
+
+    return { article }
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    },
+  },
+}
+</script>
+
+<style scoped>
+.nuxt-content h2 {
+  font-weight: bold;
+  font-size: 28px;
+}
+.nuxt-content h3 {
+  font-weight: bold;
+  font-size: 22px;
+}
+.nuxt-content p {
+  margin-bottom: 20px;
+}
+</style>
