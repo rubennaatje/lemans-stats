@@ -48,7 +48,7 @@ jobs:
         run: yarn lint
         
       - name: build
-        run: yarn run docs:build
+        run: yarn generate
         
       - name: deploy
         if: success()
