@@ -32,15 +32,14 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
+  // eslint-disable-line
   props: ['article'],
 }
 </script>
 
 <style lang="less" scoped>
-.f1 {
-  background-color: red;
-}
 ::v-deep .nuxt-content h1 {
   &:extend(.f1);
   &:extend(.lh-title);

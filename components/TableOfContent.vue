@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <section class="tableofcontent">
     <h3>Table of Content</h3>
@@ -17,7 +18,9 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
+  // eslint-disable-line
   props: ['toc'],
 }
 </script>
