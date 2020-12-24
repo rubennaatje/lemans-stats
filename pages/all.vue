@@ -1,8 +1,9 @@
 <template>
   <div>
     <h1>Blog Posts</h1>
+    <pre> {{ articles }}</pre>
     <ul>
-      <li v-for="article of articles" :key="article.slug">
+      <!-- <li v-for="article of articles" :key="article.slug">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
           <img :src="article.img" />
           <div>
@@ -11,7 +12,7 @@
             <p>{{ article.description }}</p>
           </div>
         </NuxtLink>
-      </li>
+      </li> -->
     </ul>
   </div>
 </template>
@@ -19,10 +20,11 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const articles = await $content('articles', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'author'])
-      .sortBy('createdAt', 'asc')
+    const articles = await $content('data', 'results_in')
+      //   .only(['title', 'description', 'img', 'slug', 'author'])
+      //   .sortBy('createdAt', 'asc')
       .fetch()
+    // console.log(articles.body)
 
     return {
       articles,

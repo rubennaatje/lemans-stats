@@ -8,10 +8,16 @@
         >Le Mans Stats</a
       >
       <div class="tc pb3">
-        <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Home">Home</a>
-        <a class="link dim gray f6 f5-ns dib mr3" href="/blog" title="Blog"
-          >Blog</a
+        <nuxt-link class="link dim gray f6 f5-ns dib mr3" to="/" title="Home">
+          Home
+        </nuxt-link>
+        <nuxt-link
+          to="/blog"
+          class="link dim gray f6 f5-ns dib mr3"
+          title="Blog"
         >
+          Blog
+        </nuxt-link>
         <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Store"
           >Store</a
         >

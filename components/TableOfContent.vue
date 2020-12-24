@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
   <section class="tableofcontent">
     <h3>Table of Content</h3>
