@@ -9,6 +9,10 @@
       <template v-slot:item.actions="{ item }">
         <nuxt-link :to="'/results/' + item.Id">See results</nuxt-link>
       </template>
+      <template v-slot:item.Cancelled="{ item }">
+        <div v-if="item.Cancelled !== '0'">Yes</div>
+        <div v-else>No</div>
+      </template>
     </v-data-table>
   </div>
 </template>

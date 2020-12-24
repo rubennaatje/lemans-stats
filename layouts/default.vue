@@ -25,9 +25,13 @@
         >
           All results
         </nuxt-link>
-        <a class="link dim gray f6 f5-ns dib" href="#" title="Contact"
-          >Contact</a
+        <nuxt-link
+          to="/years"
+          class="link dim gray f6 f5-ns dib mr3"
+          title="Races"
         >
+          Races
+        </nuxt-link>
       </div>
     </nav>
 
