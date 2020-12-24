@@ -3,11 +3,17 @@
     <v-data-table
       :headers="headers"
       :items="results"
-      :items-per-page="60"
+      :expanded.sync="expanded"
+      :items-per-page="100"
+      show-expand
+      item-key="No"
       class="elevation-1"
     >
       <template v-slot:item.country="{ item }">
         <CountryFlag :country="item.TeamCtry" size="normal" />
+      </template>
+      <template v-slot:expanded-item="{ headers, item }">
+        <td :colspan="headers.length">{{ item.Reason }}</td>
       </template>
     </v-data-table>
   </div>
@@ -20,6 +26,7 @@ export default {
   props: ['results'],
   data() {
     return {
+      expanded: [],
       headers: [
         {
           text: 'Year',
@@ -35,6 +42,7 @@ export default {
         { text: 'Chassis', value: 'Chassis' },
         { text: 'Engine', value: 'Engine' },
         { text: 'Laps', value: 'Laps' },
+        { text: '', value: 'data-table-expand' },
       ],
     }
   },
