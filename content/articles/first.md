@@ -10,9 +10,20 @@ author:
 ---
 
 # My first blog post
-bruh what
 
-Welcome to my first blog post using content module
+How to split up the big csv file per year:
+```powershell 
+>> Import-Csv results_in.csv -Delimiter ';' | %{
+>>    $splat = @{
+>>       'Path'              = "./$($_.Year).csv"
+>>       'Delimiter'         = ';'
+>>       'InputObject'       = $_
+>>       'Append'            = $True
+>>       'NoTypeInformation' = $True
+>>    }
+>>    Export-csv @splat
+>> }
+```
 
 ## This site will be statically hosted by github pages
 
