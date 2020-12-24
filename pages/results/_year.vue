@@ -1,5 +1,9 @@
 <template>
-  <ResultTable :results="articles.body" />
+  <div>
+    <prev-next :prev="prev" :next="next" />
+    <ResultTable :results="articles.body" />
+    xd
+  </div>
 </template>
 <script>
 export default {
@@ -10,9 +14,16 @@ export default {
       //   .sortBy('createdAt', 'asc')
       .fetch()
     // console.log(articles.body)
+    const [prev, next] = await $content('data', 'years')
+      .only(['year', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .surround(params.year)
+      .fetch()
 
     return {
       articles,
+      prev,
+      next,
     }
   },
 }

@@ -12,6 +12,14 @@
       <template v-slot:item.country="{ item }">
         <CountryFlag :country="item.TeamCtry" size="normal" />
       </template>
+
+      <template v-slot:item.Drivers="{ item }">
+        <span v-for="driver of formatDrivers(item)" :key="driver.driver">
+          {{ driver.driver }}
+          <CountryFlag :country="driver.country" size="normal" />
+        </span>
+      </template>
+
       <template v-slot:expanded-item="{ headers, item }">
         <td :colspan="headers.length">{{ item.Reason }}</td>
       </template>
@@ -45,6 +53,17 @@ export default {
         { text: '', value: 'data-table-expand' },
       ],
     }
+  },
+  methods: {
+    formatDrivers: (item) => {
+      const drivers = item.Drivers.split('|')
+      const countries = item.DrCtry.split('|')
+
+      return drivers.map((val, index) => ({
+        driver: val,
+        country: countries[index],
+      }))
+    },
   },
 }
 </script>
