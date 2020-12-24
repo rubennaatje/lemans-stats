@@ -18,9 +18,13 @@
         >
           Blog
         </nuxt-link>
-        <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Store"
-          >Store</a
+        <nuxt-link
+          to="/all"
+          class="link dim gray f6 f5-ns dib mr3"
+          title="All Results"
         >
+          All results
+        </nuxt-link>
         <a class="link dim gray f6 f5-ns dib" href="#" title="Contact"
           >Contact</a
         >
