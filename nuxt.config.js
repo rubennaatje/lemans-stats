@@ -41,8 +41,8 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
-  env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000/lemans-stats/',
+  router: {
+    base: '/lemans-stats/',
   },
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
