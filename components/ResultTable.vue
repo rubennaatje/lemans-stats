@@ -5,8 +5,11 @@
       :items="results"
       :items-per-page="60"
       class="elevation-1"
-    ></v-data-table>
-    <!-- <pre> {{ results }}</pre> -->
+    >
+      <template v-slot:item.country="{ item }">
+        <CountryFlag :country="item.TeamCtry" size="normal" />
+      </template>
+    </v-data-table>
   </div>
 </template>
 <script>
@@ -27,6 +30,7 @@ export default {
         { text: 'Pos', value: 'Pos' },
         { text: '#', value: 'No' },
         { text: 'Team', value: 'Team' },
+        { text: ' ', value: 'country' },
         { text: 'Drivers', value: 'Drivers' },
         { text: 'Chassis', value: 'Chassis' },
         { text: 'Engine', value: 'Engine' },
