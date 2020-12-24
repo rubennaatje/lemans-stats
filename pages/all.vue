@@ -25,6 +25,9 @@
 
 <script>
 export default {
+  static: {
+    prefix: false,
+  },
   async asyncData({ $content, params }) {
     const articles = await $content('data', 'results_in')
       //   .only(['title', 'description', 'img', 'slug', 'author'])

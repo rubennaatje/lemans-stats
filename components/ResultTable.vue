@@ -11,6 +11,9 @@
 </template>
 <script>
 export default {
+  static: {
+    prefix: false,
+  },
   props: ['results'],
   data() {
     return {
