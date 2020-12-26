@@ -1,7 +1,7 @@
 ---
 title: Second post
 description: The second article
-img: /second.jpg
+img: second.jpg
 alt: my first blog post
 author:
   name: Ruben
