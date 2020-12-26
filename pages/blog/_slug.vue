@@ -4,7 +4,7 @@
     <pre> {{ article.author }}</pre>
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>
-    <img :src="article.img" :alt="article.alt" />
+    <img :src="'lemans-stats/' + article.img" :alt="article.alt" />
     <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
     <nuxt-content :document="article" />
     <!-- <author :author="article.author" /> -->
