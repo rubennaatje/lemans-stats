@@ -1,7 +1,6 @@
 <template>
   <section class="tableofcontent">
     <h3>Table of Content</h3>
-    <pre> {{ toc }} </pre>
     <div id="toc">
       <ul>
         <li

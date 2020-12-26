@@ -1,7 +1,6 @@
 <template>
   <article class="pa3 pa5-ns">
     <TableOfContent :toc="article.toc" />
-    <pre> {{ article.author }}</pre>
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>
     <img :src="'lemans-stats/' + article.img" :alt="article.alt" />
