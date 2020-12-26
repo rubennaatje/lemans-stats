@@ -19,7 +19,7 @@
           </div>
           <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
             <img
-              :src="article.img"
+              :src="'lemans-stats/' + article.img"
               class="db"
               alt="Photo of a dimly lit room with a computer interface terminal."
             />
