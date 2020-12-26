@@ -1,19 +1,21 @@
 <template>
   <div>
-    <v-data-table
-      :headers="headers"
-      :items="years"
-      :items-per-page="120"
-      class="elevation-1"
-    >
-      <template v-slot:item.actions="{ item }">
-        <nuxt-link :to="'/results/' + item.Id">See results</nuxt-link>
-      </template>
-      <template v-slot:item.Cancelled="{ item }">
-        <div v-if="item.Cancelled !== '0'">Yes</div>
-        <div v-else>No</div>
-      </template>
-    </v-data-table>
+    <v-app>
+      <v-data-table
+        :headers="headers"
+        :items="years"
+        :items-per-page="120"
+        class="elevation-1"
+      >
+        <template v-slot:item.actions="{ item }">
+          <nuxt-link :to="'/results/' + item.Id">See results</nuxt-link>
+        </template>
+        <template v-slot:item.Cancelled="{ item }">
+          <div v-if="item.Cancelled !== '0'">Yes</div>
+          <div v-else>No</div>
+        </template>
+      </v-data-table>
+    </v-app>
   </div>
 </template>
 <script>

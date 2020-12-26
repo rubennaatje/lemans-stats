@@ -12,7 +12,7 @@
           Home
         </nuxt-link>
         <nuxt-link
-          to="/blog"
+          to="/blogs"
           class="link dim gray f6 f5-ns dib mr3"
           title="Blog"
         >
@@ -34,7 +34,6 @@
         </nuxt-link>
       </div>
     </nav>
-
     <Nuxt />
   </div>
 </template>

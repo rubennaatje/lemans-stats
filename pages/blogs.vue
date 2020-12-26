@@ -4,9 +4,9 @@
       <h1 class="athelas ph3 ph0-l">Blog Posts</h1>
 
       <article
-        class="pv4 bt bb b--black-10 ph3 ph0-l"
         v-for="article of articles"
         :key="article.slug"
+        class="pv4 bt bb b--black-10 ph3 ph0-l"
       >
         <div class="flex flex-column flex-row-ns">
           <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
@@ -26,7 +26,10 @@
           </div>
         </div>
         <p class="f6 lh-copy gray mv0">
-          By <span class="ttu">{{ article.author.name }}</span>
+          By
+          <span class="ttu">{{
+            article.author ? article.author.name : 'unknown'
+          }}</span>
         </p>
         <time class="f6 db gray">{{ formatDate(article.updatedAt) }}</time>
       </article>

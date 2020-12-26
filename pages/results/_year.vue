@@ -2,7 +2,6 @@
   <div>
     <prev-next :prev="prev" :next="next" />
     <ResultTable :results="articles.body" />
-    xd
   </div>
 </template>
 <script>
