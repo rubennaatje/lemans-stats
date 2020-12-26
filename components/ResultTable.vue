@@ -10,12 +10,12 @@
         item-key="No"
         class="elevation-1"
       >
-        <template v-slot:item.Team="{ item }">
+        <template #[`item.Team`]="{ item }">
           <span>{{ item.Team }}</span>
           <CountryFlag :country="item.TeamCtry" size="normal" class="fr" />
         </template>
 
-        <template v-slot:item.Drivers="{ item }">
+        <template #[`item.Drivers`]="{ item }">
           <v-container>
             <v-row no-gutters>
               <v-col v-for="driver of formatDrivers(item)" :key="driver.driver">
@@ -32,8 +32,8 @@
           <span> </span>
         </template>
 
-        <template v-slot:expanded-item="{ headers, item }">
-          <td :colspan="headers.length">{{ item.Reason }}</td>
+        <template #[`expanded-item`]="{ tableHeaders, item }">
+          <td :colspan="tableHeaders.length">{{ item.Reason }}</td>
         </template>
       </v-data-table>
     </v-app>
@@ -44,6 +44,7 @@ export default {
   static: {
     prefix: false,
   },
+  // eslint-disable-next-line vue/require-prop-types
   props: ['results'],
   data() {
     return {

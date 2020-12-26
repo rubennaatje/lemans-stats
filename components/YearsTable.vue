@@ -7,10 +7,10 @@
         :items-per-page="120"
         class="elevation-1"
       >
-        <template v-slot:item.actions="{ item }">
+        <template #[`item.actions`]="{ item }">
           <nuxt-link :to="'/results/' + item.Id">See results</nuxt-link>
         </template>
-        <template v-slot:item.Cancelled="{ item }">
+        <template #[`item.Cancelled`]="{ item }">
           <div v-if="item.Cancelled !== '0'">Yes</div>
           <div v-else>No</div>
         </template>
@@ -23,6 +23,7 @@ export default {
   static: {
     prefix: false,
   },
+  // eslint-disable-next-line vue/require-prop-types
   props: ['years'],
   data() {
     return {
