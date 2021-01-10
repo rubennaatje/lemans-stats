@@ -1,10 +1,10 @@
 ---
-title: My first Blog Post
+title: My first Post
 description: Learning how to use @nuxt/content to create a blog
 img: first.jpg
 alt: my first blog post
 author:
-  name: Benjamin
+  name: Ruben
   bio: All about Benjamin
   image: https://images.unsplash.com/
 ---
@@ -12,7 +12,8 @@ author:
 # My first blog post
 
 How to split up the big csv file per year:
-```powershell 
+
+```powershell
 >> Import-Csv results_in.csv -Delimiter ';' | %{
 >>    $splat = @{
 >>       'Path'              = "./$($_.Year).csv"

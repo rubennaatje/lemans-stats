@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ResultTable :results="articles.body" />
+    <ResultTable :results="articles" />
   </div>
 </template>
 
@@ -15,9 +15,11 @@ export default {
       //   .sortBy('createdAt', 'asc')
       .fetch()
     // console.log(articles.body)
-
     return {
-      articles,
+      articles: articles.body.map((val) => ({
+        ...val,
+        key: `${val.No} ${val.Year}`,
+      })),
     }
   },
 }

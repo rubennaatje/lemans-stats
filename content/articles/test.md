@@ -47,14 +47,14 @@ Lyciae, simul urbes terret horrendus longas a.
 ## Mortale tenentibus aquis cinnama eligit speciem inque
 
 Ipse feror quam radice resolvo, languentique verba fallunt iubet. Parvum gramen
-Pharosque minimas certe inclita sanguine si *resque* gestit foedabis, heros
+Pharosque minimas certe inclita sanguine si _resque_ gestit foedabis, heros
 designat hortamine hostes, in. Nunc longi quae densas, est aras neget rediit,
 quo bis nomen. Ante quod obmutuit **iactatis telis iuventae** dryades dolore.
 Cum est phocarum Apollineam ne accipit, flumina omnipotens vim, rari.
 
 Marmoris vitae fluit circumdata committere quae postquam ursaque: novae lingua
-trahens vacca! *Iacentem tamen* ait cura lacrimis Cadmeida pater equique ponto
+trahens vacca! _Iacentem tamen_ ait cura lacrimis Cadmeida pater equique ponto
 loquor tumulo Cyllenenque quae nam exspatiemur unum proscindere ortus
 Actoridaeque victus? Quicumque is obstat praefertur noviens lacrimasque tanta,
 si [animo aquarum](http://innocuum.io/), crine et mitisque. Ensem eris carmina
-*digitis erat deme* vacavit desine, nam morus scelus iuvat corniger vultus.
+_digitis erat deme_ vacavit desine, nam morus scelus iuvat corniger vultus.

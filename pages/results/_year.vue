@@ -1,7 +1,7 @@
 <template>
   <div>
     <prev-next :prev="prev" :next="next" />
-    <ResultTable :results="articles.body" />
+    <ResultTable :results="articles" />
   </div>
 </template>
 <script>
@@ -20,7 +20,10 @@ export default {
       .fetch()
 
     return {
-      articles,
+      articles: articles.body.map((val) => ({
+        ...val,
+        key: `${val.No} ${val.Year}`,
+      })),
       prev,
       next,
     }
