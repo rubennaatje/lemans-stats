@@ -22,3 +22,24 @@ export default {
   props: ['toc'],
 }
 </script>
+
+<style scoped>
+.toc2 {
+  margin-left: 10px;
+  font-weight: normal;
+}
+.toc3 {
+  margin-left: 20px;
+  font-weight: lighter;
+}
+
+.toc,
+ul {
+  list-style-type: none;
+}
+.toc,
+a {
+  color: black;
+  text-decoration: none;
+}
+</style>

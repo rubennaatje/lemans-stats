@@ -3,6 +3,7 @@ title: Second post
 description: The second article
 img: second.jpg
 alt: my first blog post
+type: normal
 author:
   name: Ruben
   bio: All about Benjamin
@@ -43,6 +44,10 @@ trahit Antiphates cutem; tulit agros. Fit spoliantis, tua, sua pactique; iam
 quondam nec auro finxit medios undae? Ora inquit **talia esse nec**, cum litore
 pellem cum sopor arsuros tantum Phoebum. Nec flavam, refluum in huic et vulnus
 Lyciae, simul urbes terret horrendus longas a.
+
+### This is just a test
+
+To see if my new table of contents works.
 
 ## Mortale tenentibus aquis cinnama eligit speciem inque
 

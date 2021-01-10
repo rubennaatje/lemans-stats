@@ -3,6 +3,7 @@ title: My first Post
 description: Learning how to use @nuxt/content to create a blog
 img: first.jpg
 alt: my first blog post
+type: left-right
 author:
   name: Ruben
   bio: All about Benjamin
