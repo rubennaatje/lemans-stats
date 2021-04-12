@@ -6283,14 +6283,12 @@ launch-editor@^2.2.1:
     chalk "^2.3.0"
     shell-quote "^1.6.1"
 
-less-loader@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/less-loader/-/less-loader-7.2.0.tgz#37ba9c778d999930cd24fa1b59aa4e0ba5ba0441"
-  integrity sha512-C/08kYL2+wFLFQ/c8tey4qX6xpPVtBBwGa9gtpI/bktWpSUaUkZxeOUMM2zGDrQ4s/ZVpA+Rv2RyIvwEXNVuIg==
+less-loader@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/less-loader/-/less-loader-8.1.0.tgz#8276adc16bf6576dd80b71563685a2cfe93b0a50"
+  integrity sha512-IE73O5LY5WHA71EDwszM2PIEGDF30xz45GplpRhYuxMXhAvXoMudu/ItjllNR/ht7XLh5N7JegzRg11HYu+xxg==
   dependencies:
     klona "^2.0.4"
-    loader-utils "^2.0.0"
-    schema-utils "^3.0.0"
 
 less@^4.0.0:
   version "4.0.0"
