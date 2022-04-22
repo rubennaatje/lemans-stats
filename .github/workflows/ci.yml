@@ -41,7 +41,7 @@ jobs:
         run: yarn
 
       - name: Run linter 👀
-        uses: reviewdog/action-eslint@v1.12.3
+        uses: reviewdog/action-eslint@v1.17.0
         with:
           reporter: github-pr-review # Change reporter.
           eslint_flags: '--ext .js,.vue --ignore-path .gitignore .'
